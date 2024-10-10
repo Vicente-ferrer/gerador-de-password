@@ -1,36 +1,38 @@
-A password generator using NextJs and Typescript
+Um gerador de senhas seguras
 
 ## Getting Started
 
-First, run the development server:
+Primeiro, instale as dependencias com:
+
+```bash
+npm install
+# ou
+yarn install
+```
+
+Depois, execute o comando:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# ou
+yarn run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para utilizar a ferramenta.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Autor
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<div style="background-color: #181818; display: flex; align-items: center; padding: 20px; border-radius: 10px;">
+  <img src="https://avatars.githubusercontent.com/u/61233984?v=4" alt="Foto do Autor" width="100" style="border-radius: 50%; margin-right: 20px;" />
+  <div style="color: white;">
+    <h2 style="margin: 0; font-size: 1.5em;">Vicente de Sousa</h2>
+    <p style="margin: 5px 0;">
+      <img src="https://github.com/Vicente-ferrer/assetsRepository/blob/main/linkedin.png" alt="LinkedIn" width="20" style="vertical-align: middle; margin-right: 5px;" />
+      <a href="https://www.linkedin.com/in/vicentedesousa" style="color: white; text-decoration: none;">LinkedIn</a>
+    </p>
+    <p style="margin: 5px 0;">
+      <img src="https://github.com/Vicente-ferrer/assetsRepository/blob/main/instagram.png" alt="Instagram" width="20" style="vertical-align: middle; margin-right: 5px;" />
+      <a href="https://www.instagram.com/vicentesousa__/" style="color: white; text-decoration: none;">Instagram</a>
+    </p>
+  </div>
+</div>
