@@ -10,6 +10,7 @@ import {
   generatePassword,
   checkPasswordStrength,
 } from "./pagecomponents/passwordUtils";
+import { generateSecurePassword, calculatePasswordEntropy } from "@/utils/passwordGenerator";
 
 export default function PasswordGenerator() {
   const [password, setPassword] = useState<string>("");
@@ -22,10 +23,18 @@ export default function PasswordGenerator() {
   const { toast } = useToast();
 
   const generateNewPassword = () => {
-    const options = { useUppercase, useLowercase, useNumbers, useSymbols };
-    const newPassword = generatePassword(length, options);
-    setPassword(newPassword);
-    setHistory([newPassword, ...history].slice(0, 5)); // Mantém as últimas 5 senhas
+    try {
+      const options = { useUppercase, useLowercase, useNumbers, useSymbols };
+      const newPassword = generateSecurePassword(length, options);
+      setPassword(newPassword);
+      setHistory([newPassword, ...history].slice(0, 5));
+    } catch (error) {
+      toast({
+        title: "Erro",
+        description: error instanceof Error ? error.message : "Erro ao gerar senha",
+        variant: "destructive",
+      });
+    }
   };
 
   const copyToClipboard = () => {
